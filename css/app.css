@@ -1,0 +1,178 @@
+body {
+    font-family: Monospace;
+    overflow: hidden;
+}
+
+.viewer {
+    background-color: #f0f0f0;
+    margin-top: 60px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 380px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.floor-tree-panel {
+    margin-top: 60px;
+    width: 380px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: scroll;
+}
+
+.floor-tree-panel.expanded {
+    width: 100%;
+}
+
+.viewer-markup {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    z-index: 900;
+
+    width: 320px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    display: none;
+}
+
+.viewer-docs {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    z-index: 901;
+
+    width: 320px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    display: none;
+}
+
+.viewer-docs .doc-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.viewer-docs .load-projects {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.btn-close-popup {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.loading-panel {
+    z-index: 1000;
+}
+
+.header {
+    border-bottom: 0.1em solid #e4e4e4;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: #f3f3f3;
+    height: 60px;
+    padding: 15px 15px 15px 0;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-logo img {
+    margin-top: -15px;
+    height: 60px;
+    width: 60px;
+}
+
+.header-text {
+    float: left;
+    font-size: 1.7em;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    color: #666;
+    z-index: 100;
+    display: table-row;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    text-shadow: 0 1px 0 #fff;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 0.1em solid #b3b3b3;
+}
+
+.footer ul {
+    height: 1em;
+    padding-top: 0.2em;
+    float: right;
+}
+
+.footer ul li {
+    display: inline;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #666; 
+}
+
+.footer ul li a:after {
+    content: "|";
+}
+
+.viewer-button-right {
+    position: absolute;
+    top: 65px;
+    z-index: 100;
+}
+
+.viewer-button-left {
+    position: absolute;
+    top: 65px;
+    left: 352px;
+    z-index: 100;
+    padding: 0.1em 1em 0.1em 1em;
+}
+
+.viewer-control {
+    position: absolute;
+    top: 60px;
+    z-index: 90;
+    width: 15px;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+}
+
+.viewer-control:hover {
+    background: rgba(200, 200, 200, 0.8);
+}
